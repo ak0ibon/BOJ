@@ -3,7 +3,7 @@
 long long a[MAX+5];
 long long tree[MAX*4];
 
-void update(int idx, int node_start, int node_end, int queryIdx, int value)
+void update(int idx, int node_start, int node_end, int queryIdx, long long int value)
 {
 	if(node_end < queryIdx || queryIdx < node_start) return;
 
@@ -43,8 +43,8 @@ int main()
 	
 	for(int i=0; i<M+K; i++)
 	{
-		int a,b,c;
-		scanf("%d %d %d",&a,&b,&c);
+		long long int a,b,c;
+		scanf("%lld %lld %lld",&a,&b,&c);
 		
 		if(a==1)
 		{
